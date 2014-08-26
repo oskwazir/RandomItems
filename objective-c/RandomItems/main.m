@@ -23,8 +23,16 @@ int main(int argc, const char * argv[]) {
         //Send another message, insertObject:atIndex, to the same array object
         [items insertObject:@"Zero" atIndex:0];
         
+        //Fast iteration
+        //For every item in items array
+        for(NSString *string in items){
+            //Log the description of the item
+            NSLog(@"%@",string);
+        }
+        
         //Destroy the mutable array object;
         items = nil;
+        
         
         
     }
