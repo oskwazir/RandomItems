@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRItem.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -30,7 +31,10 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@",string);
         }
         
-        //Destroy the mutable array object;
+        BNRItem *blueSofa = [[BNRItem alloc] initWithItemName:@"Blue Sofa" valueInDollars:2000 serialNumber:@"LZB405X"];
+        
+        NSLog(@"%@",blueSofa);
+                         //Destroy the mutable array object;
         items = nil;
         
         
