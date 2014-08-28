@@ -14,11 +14,15 @@
 @property (nonatomic)   int valueInDollars;
 @property (nonatomic,copy) NSDate *dateCreated;
 
++(instancetype)randomItem;
+
 //Designated initializer for BNRItem
 -(instancetype)initWithItemName:(NSString *)name
                  valueInDollars:(int)value
                    serialNumber:(NSString *)serialNumber;
 
 -(instancetype)initWithItemName:(NSString *)name;
+
+-(instancetype)init;
 
 @end
